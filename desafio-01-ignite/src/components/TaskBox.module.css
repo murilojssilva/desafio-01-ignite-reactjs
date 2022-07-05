@@ -1,0 +1,138 @@
+.taskBox {
+  padding: 5rem;
+}
+
+.taskBox header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskBox header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskBox header div h1 {
+  font-size: 2rem;
+}
+
+.taskBox header div span {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.taskBox header div:first-child h1 {
+  color: var(--blue-300);
+}
+
+.taskBox header div:last-child h1 {
+  color: var(--purple-300);
+}
+
+.taskBox header div span {
+  background-color: var(--gray-400);
+  color: var(--gray-100);
+
+  display: inline-block;
+  border-radius: 20px;
+
+  font-weight: bold;
+
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.task,
+.taskEmpty {
+  margin-top: 2rem;
+  border-top: 0.2rem solid var(--gray-400);
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.task {
+  color: var(--gray-100);
+  background-color: var(--gray-500);
+  border: 0.1rem solid var(--gray-400);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.task + .task {
+  margin-top: 2rem;
+}
+
+.dashedText {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.task header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.task button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+
+  transition: color 0.1s;
+  line-height: 0;
+  border-radius: 2px;
+}
+
+.task button:hover {
+  color: var(--red-500);
+}
+
+.task div input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--blue-300);
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 50%;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.task div input[type="checkbox"]:checked {
+  border: 2px solid transparent;
+  background-color: var(--purple-700);
+}
+
+.taskEmpty {
+  padding: 5rem 0;
+  display: grid;
+}
+
+.taskEmpty div h1,
+.taskEmpty div p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-300);
+  font-size: 1.5rem;
+}
+
+.taskEmpty div h1 {
+  font-weight: bold;
+}
+
+.taskEmpty img {
+  display: block;
+  margin: 0 auto;
+  color: var(--gray-900);
+  height: 5rem;
+  width: 5rem;
+}
